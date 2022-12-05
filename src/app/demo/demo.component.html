@@ -1,0 +1,48 @@
+<!-- 
+<div>
+ 
+   <h3>This is Child Component...</h3>
+   <h2>{{cdata}}</h2>
+   <h3>{{Oninit}}</h3>
+</div>
+ -->
+
+ <div>
+    <ul>
+        <ng-container *ngFor="let m of Mobile">
+            <li>{{m}}</li>
+        </ng-container>
+    </ul>
+ </div>
+ <ng-content></ng-content>
+ <div>
+    <h2>This is Child Component</h2>
+   
+ </div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div>
+    <span>demo:</span>
+    <input type="text" #myVariable (keyup)="0">
+    <button (click)="sayHello(myVariable)">say hello</button><br><br>
+    <span>gender:</span>
+    <input type="text" #gender>
+    <button (click)="genderCheck(gender)">say hello</button>
+
+
+    <h3>{{myVariable.value}}</h3> -->
+    <!-- <h3> Hello..! Good Morning {{wish}}</h3>
+</div> -->
