@@ -1,0 +1,121 @@
+[
+    {
+        "id":1,
+        "Name":"Ahex Technologies",
+        "Revenue":"1.5 crore",
+        "Establish_Year":2009,
+        "Employee_no":4,
+        "Industry": "It services",
+        "image":"https://media.glassdoor.com/sqll/1294031/ahex-technologies-squarelogo-1631015750911.png",
+         "CEO":"Parth Shukla",
+        "headquarter":"Hyderabad",
+        "Expenditure":"$6.195B",
+        "Profit":"15%",
+        "EmployeeDetails":[
+          {
+           "Name":"Sreeja",
+           "Experience":" 1 yr",
+           "Technology":"Angular"
+          },
+          {
+            "Name":"Raghu",
+            "Experience":" 2 yrs",
+            "Technology":"React"
+           },
+           {
+            "Name":"Navya",
+            "Experience":" 1.5 yr",
+            "Technology":"node.js"
+           },
+           {
+            "Name":"Greeshma",
+            "Experience":" 1 yr",
+            "Technology":".NET"
+           }
+        ]
+      },
+      {
+        "id":2,
+        "Name":"Wipro",
+        "Revenue":"2 crore",
+        "Establish_Year":1945,
+        "Employee_no":3,
+        "Industry": "It services",
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/2560px-Wipro_Primary_Logo_Color_RGB.svg.png",
+        "CEO":"Thierry Delaporte",
+        "headquarter":"pune",
+        "Expenditure":"$9.195B",
+        "Profit":"13.14%",
+        "EmployeeDetails":[
+          {
+           "Name":"Sreeja",
+           "Experience":" 1 yr",
+           "Technology":"Angular"
+          },
+          {
+            "Name":"Raghu",
+            "Experience":" 2 yrs",
+            "Technology":"React"
+           },
+           {
+            "Name":"Navya",
+            "Experience":" 1.5 yr",
+            "Technology":"node.js"
+           }
+        ]
+      },
+      {
+        "id":3,
+        "Name":"TCS",
+        "Revenue":"1 crore",
+        "Establish_Year":1968,
+        "Employee_no":2,
+        "Industry": "It services",
+        "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Tata_Consultancy_Services_Logo.svg/2560px-Tata_Consultancy_Services_Logo.svg.png",
+        "CEO":"Rajesh Gopinathan",
+        "headquarter":"mumbai",
+        "Expenditure":"$7.195B",
+        "Profit":"14%",
+        "EmployeeDetails":[
+          {
+           "Name":"Sreeja",
+           "Experience":" 1 yr",
+           "Technology":"Angular"
+          },
+          {
+            "Name":"Raghu",
+            "Experience":" 2 yrs",
+            "Technology":"React"
+           }]
+      },
+      {
+        "id":4,
+        "Name":"Infosys",
+        "Revenue":"1.8 crore",
+        "Establish_Year":1981,
+        "Employee_no":3,
+        "Industry": "It services",
+        "image":"https://cdn-ukwest.onetrust.com/logos/8d84415b-1b52-4bc4-8d5f-ca9a8eccaf8a/f7db8968-fc22-4620-92ac-dc05c5d2aa15/02460a41-565e-4cac-80a7-449bc8f77a72/logo-infosys.png",
+        "CEO":"Salil Parekh",
+        "headquarter":" Bangalore",
+        "Expenditure":"$6.195B",
+        "Profit":"12%",
+        "EmployeeDetails":[
+          {
+           "Name":"Sreeja",
+           "Experience":" 1 yr",
+           "Technology":"Angular"
+          },
+          {
+            "Name":"Raghu",
+            "Experience":" 2 yrs",
+            "Technology":"React"
+           },
+           {
+            "Name":"Navya",
+            "Experience":" 1.5 yr",
+            "Technology":"node.js"
+           }
+        ]
+      }
+]

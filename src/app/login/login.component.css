@@ -1,0 +1,37 @@
+.fluid-container {
+    height: 580px;
+}
+.form{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+     margin: 0 auto;
+    min-height: 50vh;
+    max-height: 70vh;
+    width: 70vh;
+    margin-top: 120px;
+}
+
+.input {
+    margin-top: 30px;
+}
+input{
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.buttons {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+button{
+    margin-right: 20px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+input.ng-invalid.ng-touched{
+    border: 2px solid red;
+}
+small{
+    color: red;
+    margin-left: 50px;
+}
+

@@ -1,0 +1,20 @@
+
+
+    <div class="card">
+        <div class="modal-header">
+            <h2><b>{{companyDetails?.Name}}</b></h2>
+            <button type="button" class="close" data-dismiss="modal" (click)="onClose()">&times;</button>
+
+        </div>
+
+        <div class="companyDetails">
+            <img src='{{companyDetails.image}}' alt="image" style="width:200px;height:200px">
+            <div class="details">
+                <h5><b> CEO:</b>{{companyDetails?.CEO}}</h5>
+                <h5><b> headquarter:</b>{{companyDetails?.headquarter}}</h5>
+                <h5><b> Expenditure:</b>{{companyDetails?.Expenditure}}</h5>
+                <h5><b>Profit:</b>{{companyDetails?.Profit}}</h5>
+
+            </div>
+        </div>
+    </div>

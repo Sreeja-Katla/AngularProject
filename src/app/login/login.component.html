@@ -1,0 +1,35 @@
+<div class="fluid-container text-center">
+
+    <div clas="container" >
+        <form class="form container" [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+
+            <h2>User Login </h2>
+            <div>
+            <div class="input">
+                <label for="name"><b>User Name:</b></label>
+
+                 <input class="input-field" type="text" id="name" placeholder="enter your user name..." formControlName="userName">
+                </div>
+                <div>
+                  <small *ngIf="reactiveForm.get('userName').invalid && reactiveForm.get('userName').touched ">
+                    *UserName is required</small>
+                 </div>
+            <div class="input">
+                <label for="password"><b>Password:</b></label>
+                <input class="input-field" type="password" id="password" placeholder="Enter your Password..."  formControlName="userPassword" >
+            </div>
+            <div>
+              <small *ngIf="reactiveForm.get('userPassword').invalid && reactiveForm.get('userPassword').touched ">
+                *UserPassword is required</small>
+             </div>
+
+              <div class="buttons">
+                <button type="submit" class="btn btn-success" [disabled]="reactiveForm.invalid">Login</button>
+                <button type="reset" class="btn btn-danger" (click)="onReset()">Reset</button>
+              </div>
+
+            </div>
+        </form>
+    </div>
+
+</div>

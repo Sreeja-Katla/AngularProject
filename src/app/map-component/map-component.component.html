@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="image mt-5">
+  <img src={{image}} alt="Image" width="200px" height="200px" >
+  <div class="details mt-3">
+  <h6 class="me-3">Latitude:<b> 17.4576582 </b></h6>
+  <h6>Longitude:<b> 78.4576582 </b></h6>
+  <h6 class="me-3">Date:<b>{{ currentDate | date:"dd/mm/yyyy" }} </b></h6>
+  <h6>Time:<b> {{ currentTime }}</b></h6>
+  <h6>device Id:<b> Mozilla 5.0(Windows NT) </b></h6>
+</div>
+ </div>
+ <div class="map" id="map" class="match-parent" style="height:600px; width:1000px"  center="center">
+  <!-- <mgl-marker
+  [lngLat]="[-73.985664, 40.748514]"
+  [draggable]="false"
+>
+  <div class="marker"></div>
+</mgl-marker> -->
+
+</div>
+<!-- <google-map  height="600px" width="1000px" [center]="center" [zoom]="14"   >
+            <map-marker  [position]="center" >
+
+            </map-marker>
+
+          </google-map> -->
+</div>

@@ -1,0 +1,88 @@
+<div>
+    <app-header></app-header>
+    <button class="btn btn-success" (click)="addCompany()">Add Company</button>
+
+    <div class="container">
+        <table class="table table-bordered table-striped container">
+            <thead class="thead-dark">
+                <tr>
+                    <th><b>Company Name</b></th>
+                    <th><b>Revenue</b></th>
+                    <th><b>Established Year</b></th>
+                    <th><b>No.of Employees</b></th>
+                    <th><b>Industry</b></th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let company of companyList,let i=index">
+                <tr>
+                    <td><a (click)="showCompanyDetails(company)"
+                            >{{company.Name}}</a></td>
+                    <td>{{company.Revenue}}</td>
+                    <td>{{company.Establish_Year}}</td>
+                    <td><a data-bs-toggle="modal" data-bs-target="#employeepopup"
+                            (click)="showEmployeeDetails(i,employeepopup)">{{company.Employee_no}}</a></td>
+                    <td>{{company.Industry}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    <app-footer></app-footer>
+</div>
+    <!-- Company details popup -->
+
+       <ng-template #popup let-modal>
+
+            <div class="card">
+                <div class="modal-header">
+                    <h2><b>{{companyDetails.Name}}</b></h2>
+                    <button type="button" class="close" data-dismiss="modal" (click)="onClose()">&times;</button>
+
+                </div>
+
+                <div class="companyDetails">
+                    <img src='{{companyDetails.image}}' alt="image" style="width:200px;height:200px">
+                    <div class="details">
+                        <h5><b> CEO:</b>{{companyDetails.CEO}}</h5>
+                        <h5><b> headquarter:</b>{{companyDetails.headquarter}}</h5>
+                        <h5><b> Expenditure:</b>{{companyDetails.Expenditure}}</h5>
+                        <h5><b>Profit:</b>{{companyDetails.Profit}}</h5>
+
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+
+
+    <!-- Employee Details Popup -->
+
+        <ng-template #employeepopup let-modal>
+            <div class="card">
+                <div class="modal-header">
+                    <h2 style="text-align: center;"><b>{{companyDetails.Name}}</b></h2>
+                    <button type="button" class="close" (click)="onClose()" data-dismiss="modal">&times;</button>
+                </div>
+
+                <table class="table table-bordered table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <td><b>Employer Name</b></td>
+                            <td><b>Technology</b></td>
+                            <td><b>Experience</b></td>
+
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let Employee of EmployeeDetails">
+                        <tr>
+                            <td>{{Employee.Name}}</td>
+                            <td>{{Employee.Experience}}</td>
+                            <td>{{Employee.Technology}}</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </ng-template>

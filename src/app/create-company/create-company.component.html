@@ -1,0 +1,23 @@
+<div>
+    <form  [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+
+      <label for="Cname">Company Name</label>
+      <input type="text" id="Cname" formControlName="Name" placeholder="Your name..">
+
+      <label for="Revenue">Revenue</label>
+      <input type="number" id="Revenue" formControlName="Revenue" placeholder="Your last name..">
+
+      <label for="Year">Established Year</label>
+      <input type="number" id="Year" formControlName=" Establish_Year" placeholder="Your last name..">
+
+      <label for="Employ">No.of Employees</label>
+      <input type="number" id="Employ" formControlName="Employee_no" placeholder="Your last name..">
+
+      <label for="Industry">Industry</label>
+      <input type="text" id="Industry" formControlName="Industry" placeholder="Your last name..">
+
+
+
+      <button  type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </div>
